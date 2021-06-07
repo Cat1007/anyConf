@@ -1,0 +1,37 @@
+let mapleader=" "
+
+""" Plugins  --------------------------------
+set easymotion
+set surround
+set multiple-cursors
+set NERDTree
+
+""" Common settings -------------------------
+
+set showmode               " Show current mode in command-line.
+set showcmd                " Show already typed keys when more are expected.
+
+set incsearch              " Highlight while searching with / or ?.
+set hlsearch               " Keep matches highlighted.
+
+set nu
+set so=7
+
+set relativenumber         " 显示相对行号
+
+""" Idea specific settings ------------------
+
+""" Mappings --------------------------------
+inoremap jk <Esc>
+
+" 标签页快捷操作
+nnoremap <leader>tn :tabnext<CR>
+nnoremap <leader>tp :tabpre<CR>
+nnoremap <leader>to :tabonly<CR>
+nnoremap <leader>tc :tabc<CR>
+
+map <leader>ef <Plug>(easymotion-s)
+map <leader>ee <Plug>(easymotion-f)
+
+nnoremap <leader>f :NERDTree<CR>
+map <leader>n <Plug>NextWholeOccurrence
